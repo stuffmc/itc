@@ -22,6 +22,6 @@ The first time, the app will create a "YOUR APP.txt" file with the status ("Wait
 
 As soon as this status changes, the app will display a message, make beeps, and speak the message.
 
-It will *repeat* this in a loop ;-) until you break and restart the script. This is to ensure the "It's okay, I'll do something factor! You basically start the script once per Status change.
+It will *repeat* this in a loop ;-) until you break and restart the script. This is to ensure the "It's okay, I'll do something" factor! You basically start the script once per Status change.
 
 PS: Obviously, this is a *very* basic solution, but for now, it's enough for me ;) Feel free to fork me!

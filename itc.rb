@@ -22,9 +22,8 @@ loop do
     # this is to ensure the "It's okay, I'll do something factor!"
     changed = alarm
     # You'll have to break and restart the app for it to stop! ;-)
-    sleep 2
   else
-    puts "Login to iTunes Connect..."
+    puts "\n\nLogin to iTunes Connect at " + Time.now.to_s
     agent = Mechanize.new
     page = agent.get(ITC+LOGIN) # Loging
     puts "Clicking '#{APPS}'..."
@@ -47,5 +46,6 @@ loop do
       File.open(file, 'w') {|f| f.write(status) }
     end
   end
+  sleep 600 # It's probably fine to check every 10 minutes. Checking too often might not please Apple :)
 end
 
