@@ -1,0 +1,3 @@
+itc-pwd.rb
+*.txt
+!README.txt
